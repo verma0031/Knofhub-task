@@ -35,8 +35,8 @@ const Page = () => {
 	return (
 		<div>
 			<Header />
-			<div className="container mx-auto p-4 flex">
-				<div className="left-panel w-3/4 pr-4 overflow-y-auto h-screen hide-scrollbar">
+			<div className="container mx-auto p-4 flex flex-col md:flex-row">
+				<div className="left-panel pr-4 overflow-y-auto h-screen hide-scrollbar mx-auto w-full md:w-3/4">
 					<AboutEvent
 						details={eventData.description}
 						posterUrl={eventData.event_poster_url}
@@ -45,7 +45,7 @@ const Page = () => {
 					<Workshops />
 					<Sponsors />
 				</div>
-				<div className="right-panel w-1/4 p-4 sticky top-0 self-start">
+				<div className="right-panel p-4 sticky top-0 self-start w-full md:w-1/4">
 					<EventDetails event={eventData} />
 					<div className="flex flex-col gap-2">
 						<a
@@ -72,4 +72,4 @@ const Page = () => {
 	);
 };
 
-export default Page
+export default Page;
