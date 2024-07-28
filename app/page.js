@@ -49,7 +49,7 @@ const Page = () => {
 					<EventDetails event={eventData} />
 					<div className="flex flex-col gap-2">
 						<a
-							href={eventData.buy_now_link} // replace with the actual link if available
+							href={eventData.buy_now_link}
 							target="_blank"
 							rel="noopener noreferrer"
 							className="bg-black text-white text-center py-2 my-2 rounded-lg shadow-md hover:bg-gray-700"
